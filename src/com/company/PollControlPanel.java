@@ -1,4 +1,4 @@
-/*
+package com.company;/*
  * Implements the control panel for the Poll program
  */
 
