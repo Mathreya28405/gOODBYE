@@ -5,11 +5,13 @@ package com.company;
 
 public class MathEx {
     public static void main(String [] args) {
-        int g = swap(157);
-        System.out.println(g);
+        //int g = swap(157);
+        //System.out.println(g);
 
-        timeLeft(1, 34, 8, 20);
+        //timeLeft(1, 34, 8, 20);
 
+        int s = dayOfWeek(5, 4);
+        System.out.println(s);
     }
     public static int swap(int x) {
         int y = x % 10;
@@ -51,6 +53,13 @@ witch day of the week January 1 is. (0-Sunday, 1-Monday, 2-Tuesday, 3-Wednesday,
 Thursday, 5-Friday, 6-Saturday) The second argument is a date. (i.e. 15 for Jan 15 th ). The
 method will return an integer 0-6 indicating which day of the week the date corresponds to.
      */
+    public static int dayOfWeek (int m, int n) {
+        int z = 1;
+        int o = (n - z) % 7;
+        int p = o + m;
+        return p;
+
+    }
 
 }
 
