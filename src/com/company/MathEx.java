@@ -15,8 +15,19 @@ public class MathEx {
         timeLeft(1, 34, 8, 20);
         timeLeft(1, 15, 4, 36);
 
-        int s = dayOfWeek(5, 4);
+        int s = dayOfWeek(0, 1);
+        int t = dayOfWeek(0, 14);
+        int u = dayOfWeek(6, 22);
+        int v = dayOfWeek(5, 4);
+        int w = dayOfWeek(1, 24);
+        int x = dayOfWeek(2, 1);
         System.out.println(s);
+        System.out.println(t);
+        System.out.println(u);
+        System.out.println(v);
+        System.out.println(w);
+        System.out.println(x);
+
     }
     public static int swap(int x) {
         int y = x % 10;
@@ -71,4 +82,18 @@ method will return an integer 0-6 indicating which day of the week the date corr
     }
 
 }
+
+/* outputs for given inputs
+175
+132
+1846369
+6 hours, 46 minutes3 hours, 21 minutes
+0
+6
+6
+1
+3
+2
+
+ */
 
