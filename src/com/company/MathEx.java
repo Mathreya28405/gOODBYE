@@ -5,10 +5,15 @@ package com.company;
 
 public class MathEx {
     public static void main(String [] args) {
-        //int g = swap(157);
-        //System.out.println(g);
+        int g = swap(157);
+        int h = swap(123);
+        int i = swap(1846396);
+        System.out.println(g);
+        System.out.println(h);
+        System.out.println(i);
 
-        //timeLeft(1, 34, 8, 20);
+        timeLeft(1, 34, 8, 20);
+        timeLeft(1, 15, 4, 36);
 
         int s = dayOfWeek(5, 4);
         System.out.println(s);
@@ -54,11 +59,15 @@ Thursday, 5-Friday, 6-Saturday) The second argument is a date. (i.e. 15 for Jan 
 method will return an integer 0-6 indicating which day of the week the date corresponds to.
      */
     public static int dayOfWeek (int m, int n) {
-        int z = 1;
+       /* int z = 1;
         int o = (n - z) % 7;
         int p = o + m;
         return p;
-
+    I am not sure why this code doesn't work. Please let me know if I can modify my this code in any way and still have it work!
+    */
+        int o = (m+n) - 1;
+        int p = o%7;
+        return p;
     }
 
 }
